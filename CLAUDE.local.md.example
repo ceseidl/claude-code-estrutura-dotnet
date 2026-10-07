@@ -1,0 +1,15 @@
+# Preferências pessoais (copie para CLAUDE.local.md)
+
+O `CLAUDE.local.md` fica na raiz, é lido junto com o
+`CLAUDE.md` e não vai para o git (está no `.gitignore`).
+
+## Meu ambiente
+
+- Porta local da API: 5080 (a 5000 é de outro projeto)
+- SQL Server de testes: `localhost,1433` (só na minha máquina)
+- Responda em português e seja direto.
+
+## Meu fluxo
+
+- Prefiro `dotnet watch test` ao rodar testes em loop.
+- Ao propor um plano, liste no máximo 5 passos.
