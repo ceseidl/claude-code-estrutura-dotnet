@@ -44,7 +44,7 @@ Código de saída 2 bloqueia e o stderr é o motivo; 0 libera.
 ```bash
 echo '{"tool_name":"Bash","tool_input":{"command":"dotnet publish"}}' \
   | bash .claude/hooks/validate-bash.sh; echo "exit=$?"
-# Bloqueado pelo hook: rode 'dotnet test' antes do 'dotnet publish'.
+# Bloqueado: rode 'dotnet test' antes do 'dotnet publish'.
 # exit=2
 ```
 

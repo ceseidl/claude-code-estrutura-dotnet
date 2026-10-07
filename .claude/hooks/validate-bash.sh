@@ -12,7 +12,7 @@ else
     's/.*"command"[[:space:]]*:[[:space:]]*"\(.*\)".*/\1/p')
 fi
 
-block() { echo "Bloqueado pelo hook: $1" >&2; exit 2; }
+block() { echo "Bloqueado: $1" >&2; exit 2; }
 
 case "$cmd" in
   *"git push --force"*|*"git push -f"*)

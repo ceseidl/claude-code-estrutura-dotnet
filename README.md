@@ -44,7 +44,7 @@ blocks it and stderr is the reason; exit 0 allows it.
 ```bash
 echo '{"tool_name":"Bash","tool_input":{"command":"dotnet publish"}}' \
   | bash .claude/hooks/validate-bash.sh; echo "exit=$?"
-# Bloqueado pelo hook: rode 'dotnet test' antes do 'dotnet publish'.
+# Bloqueado: rode 'dotnet test' antes do 'dotnet publish'.
 # exit=2
 ```
 
