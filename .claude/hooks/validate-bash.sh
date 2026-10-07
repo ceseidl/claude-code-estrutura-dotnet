@@ -7,9 +7,9 @@ input=$(cat)
 if command -v jq >/dev/null 2>&1; then
   cmd=$(printf '%s' "$input" | jq -r '.tool_input.command // ""')
 else
-  # sem jq: extrai o campo "command" do JSON com sed
+  # sem jq: pega o valor de "command" (aceita \" dentro dele)
   cmd=$(printf '%s' "$input" | sed -n \
-    's/.*"command"[[:space:]]*:[[:space:]]*"\(.*\)".*/\1/p')
+    's/.*"command" *: *"\(\([^"\\]\|\\.\)*\)".*/\1/p')
 fi
 
 block() { echo "Bloqueado: $1" >&2; exit 2; }
