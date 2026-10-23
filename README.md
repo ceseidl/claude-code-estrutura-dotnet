@@ -2,6 +2,8 @@ English | [Português](README.pt-BR.md)
 
 # claude-code-estrutura-dotnet
 
+Full article: <https://ceseidl.com.br/en/artigos/estrutura-projeto-claude-code/>
+
 Companion repository for the article "Claude Code Project
 Structure: What Goes in Each File and Folder". It is a small
 .NET 10 solution (Minimal API + xUnit) with the **complete

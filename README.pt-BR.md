@@ -2,6 +2,8 @@
 
 # claude-code-estrutura-dotnet
 
+Artigo completo: <https://ceseidl.com.br/artigos/estrutura-projeto-claude-code/>
+
 Repositório de apoio do artigo "Estrutura de um Projeto Claude
 Code: o Que Vai em Cada Arquivo e Pasta". É uma solução .NET 10
 pequena (Minimal API + xUnit) com a **estrutura completa de
